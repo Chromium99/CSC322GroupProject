@@ -1,4 +1,5 @@
 # CSC322 Group Project: Business Transaction System
+# Carlos Rodriguez, Misael Perez, Md Omit
 
 ## System Overview
 This system allows users to conduct secure business transactions. There are three types of users: Visitors (V), Users (U), and Super-users (S).
