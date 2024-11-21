@@ -1,0 +1,223 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8ab394; /* Background color for the entire page */
+    color: black; /* Text color */
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: #6c9f76; /* Header background color */
+    padding: 10px;
+  }
+  
+  .profile-pic {
+    flex: 1;
+    font-size: 20px;
+    color: #edf3e1; /* Text color matching the design */
+  }
+  
+  .search-bar {
+    flex: 2;
+    display: flex;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 5px;
+    background-color: #c7dfba; /* Search box background */
+    border: 1px solid #6c9f76; /* Border matches header */
+    color: black;
+  }
+  
+  .search-bar button {
+    background-color: #c7dfba; /* Button matches input */
+    border: 1px solid #6c9f76; /* Button border */
+    cursor: pointer;
+    color: black;
+  }
+  
+  .nav {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav button {
+    background-color: #c7dfba; /* Button background */
+    border: 1px solid #6c9f76; /* Matches the header and theme */
+    padding: 5px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Main styles */
+  .main {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #d5d5c3; /* Sidebar background */
+    padding: 10px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+    background-color: #c7dfba; /* Sidebar item background */
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Wishlist section */
+  .wishlist {
+    width: 80%;
+    padding: 20px;
+    background-color: #edf3e1; /* Wishlist background */
+  }
+  
+  .item {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #6c9f76; /* Item border matches theme */
+    padding: 10px;
+    background-color: #c7dfba; /* Item background */
+  }
+  
+  .item-image {
+    flex: 1;
+    background-color: #8ab394; /* Image placeholder background */
+    text-align: center;
+    line-height: 100px;
+    color: #edf3e1; /* Placeholder text color */
+  }
+  
+  .item-details {
+    flex: 2;
+    padding: 0 10px;
+  }
+  
+  .item-details button {
+    margin: 5px 0;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #8ab394; /* Button background */
+    border: 1px solid #6c9f76; /* Matches theme */
+    color: #edf3e1; /* Text color on buttons */
+  }
+  /* Header styling */
+.header {
+    background-color: #6c9f76; /* Darker green for the header */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Main content container */
+  .content-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #edf3e1; /* Light beige background */
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Account page styles */
+  .account-info {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .account-info p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .btn-edit {
+    background-color: #8ab394;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-edit:hover {
+    background-color: #6c9f76;
+  }
+  
+  /* Buttons for actions */
+  .btn-action {
+    background-color: #c7dfba;
+    color: black;
+    padding: 10px;
+    margin: 10px 5px;
+    border: 1px solid #6c9f76;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-action:hover {
+    background-color: #6c9f76;
+    color: white;
+  }
+  
+  /* Item list styles */
+  .item-list h2, .seller-list h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #6c9f76;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 15px;
+    border-bottom: 1px solid #d3e3d3;
+    text-align: left;
+  }
+  
+  ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .btn-remove {
+    background-color: #ff7070;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-remove:hover {
+    background-color: #d35c5c;
+  }
+  /* Captcha question styling */
+.captcha-question {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6c9f76; /* Green */
+    margin-bottom: 10px;
+  }
+  
