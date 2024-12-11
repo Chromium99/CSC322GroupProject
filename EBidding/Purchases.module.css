@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color:#018749;/* Background color for the entire page */
-    color:cadetblue; /* Text color */
+    color:black; /* Text color */
   }
 .header {
     position:fixed;

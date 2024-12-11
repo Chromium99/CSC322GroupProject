@@ -1,40 +1,57 @@
-body {
+/*our main colors
+1-00a550
+2-00AB66
+3-00a877
+*/
+
+.body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #8ab394; /* Background color for the entire page */
+    background-color: #018749; /* Background color for the entire page */
     color: black; /* Text color */
   }
   
   /* Header styles */
+
   .header {
-   
-    position:fixed;
-  
-   
-    background-color:forestgreen; /* Header background color */
-    padding: 40px;
+    background-color: #018749; /* Darker green for the header */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position:fixed; 
     top:0px;
     width:100%;
-    left:0px;
+   
   }
-  
   .profilepic {
-    float:left;
+    position:fixed;
 
     font-size: 20px;
     color:black; /* Text color matching the design */
   
     background-color: white;
-    height:100px;
-    width:100px;
+    height:105px;
+    width:105px;
     border-radius: 50%;
-    align-items: center;
+   align-content: center;
     text-align: center;
+    float:left;
+    left:35px;
+    
+  }
+  .pp{
+    position:relative;
+    text-align: center;
+    font-size: 15px;;
+   
+
   }
   
   .searchbar {
     flex: 1;
-    display: flex;
+    position: relative;
    
   }
   
@@ -62,7 +79,7 @@ body {
   
 
     /*justify-content: space-around;*/
-    background-color: #6c9f76;
+    background-color: #018749;
   }
   
   .nav button {
@@ -75,7 +92,7 @@ body {
   
   /* Main styles */
   .main {
-    display:flex;
+    display:grid;
     
     position:fixed;
     padding: 40px;
@@ -84,7 +101,7 @@ body {
   .sidebar {
     height:100%;
     width: 160px;
-    background-color:seagreen; /* Sidebar background */
+    background-color:#00a877 ; /* Sidebar background */
     padding: 10px;
     position:fixed;
     top: 134px;
@@ -107,6 +124,7 @@ body {
   }
   
   /* Wishlist section */
+
   .wishlist {
     position:fixed;
     width: 1348px;
@@ -115,14 +133,14 @@ body {
     top: 134px;
    
     right:0;
-    background-color:#8ab394; /* Wishlist background */
+    background-color:#018749; ; /* Wishlist background */
   }
   
-  .item {
-    display: flex;
+  .item { 
+    display:flex;
     margin-bottom: 20px;
     border: 1px solid #6c9f76; /* Item border matches theme */
-    padding: 10px;
+    padding: 180px;
     background-color: #c7dfba; /* Item background */
   }
   
@@ -138,7 +156,32 @@ body {
     flex: 2;
     padding: 0 10px;
   }
+  /*The following space below will be reserved for the wishlist items*/
+  .mainPosition{
+    position:fixed;
+    display:flex;
+    background-color: #018749;
+    top:145px;
+    height:100%;
+    width:1250px;
+    left:200px;
+    border-radius: 10px;
+    align-items:baseline;
+    flex-wrap: wrap;
+    overflow:scroll;
   
+  
+  }
+
+  .containersForItem{
+    background-color: #d35c5c;
+  }
+  
+
+
+
+
+
   .itemdetails button {
     margin: 5px 0;
     padding: 5px;
@@ -148,14 +191,7 @@ body {
     color: #edf3e1; /* Text color on buttons */
   }
   /* Header styling */
-.header {
-    background-color: #6c9f76; /* Darker green for the header */
-    padding: 20px;
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-  }
+
   
   /* Main content container */
   .contentcontainer {
@@ -253,4 +289,22 @@ body {
     color: #6c9f76; /* Green */
     margin-bottom: 10px;
   }
+
+
+/*The following CSS code is for the Wishlist page*/
+.SavedItems{
+  position:fixed;
+  display:flex;
+  background-color: #018749;
+  top:200px;
+  height:100%;
+  width:1250px;
+
+  border-radius: 10px;
+  align-items:baseline;
+  flex-wrap: wrap;
+  overflow:scroll;
+ 
+
+}
   

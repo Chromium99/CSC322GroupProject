@@ -1,7 +1,9 @@
 import React from "react";
-
-
-
+import stylecss from "./styles.module.css";
+import loginstyle from "./login.module.css";
+import { Link, Outlet } from "react-router-dom";
+ 
+ 
 
 function ViewAccount() {
     return(
@@ -13,11 +15,11 @@ function ViewAccount() {
                 <link rel="stylesheet" href="styles.css"/>
             </head>
             <body>
-                <header class="header">
+                <header class={stylecss.header}>
                     <h1>User Account</h1>
                 </header>
-                <main class="content-container">
-                <div class="account-info">
+                <main className={stylecss.contentcontainer}>
+                <div className={stylecss.accountinfo}>
                     <h2>Account Details</h2>
                     <p><strong>Name:</strong> John Doe</p>
                     <p><strong>Email:</strong> johndoe@example.com</p>
@@ -25,14 +27,16 @@ function ViewAccount() {
                     <button class="btn-edit">Edit Details</button>
                 </div>
                 <div class="account-actions">
-                    <button class="btn-action">View Wishlist</button>
-                    <button class="btn-action">View Bids/Purchases</button>
-                    <button class="btn-action">Saved Sellers</button>
+                    <button class="btn-action">View Bids</button>
+                    <button className={stylecss.btnaction}> <Link to="/ViewWishlist">ViewWishlist</Link></button>
+                    <button className={stylecss.btnaction}> <Link to="/Purchases">Purchases</Link></button>
+                    <button className={stylecss.btnaction}> <Link to="/SavedSellers">Saved Sellers</Link></button>
+                    <button className={stylecss.btnaction}> <Link to="/EBidHome">Go Back to Home</Link></button>
                 </div>
                 </main>
             </body>
         </div>
     );
 }
-
+ 
 export default ViewAccount;

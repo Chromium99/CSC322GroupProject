@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #8ab394; /* Background color for the entire page */
+    background-color: #018749; /* Background color for the entire page */
     color: black; /* Text color */
   }
   
@@ -149,7 +149,7 @@ body {
   }
   
   /* Account page styles */
-  .account-info {
+  .accountinfo {
     margin-bottom: 20px;
     text-align: left;
   }
@@ -174,7 +174,7 @@ body {
   }
   
   /* Buttons for actions */
-  .btn-action {
+  .btnaction {
     background-color: #c7dfba;
     color: black;
     padding: 10px;

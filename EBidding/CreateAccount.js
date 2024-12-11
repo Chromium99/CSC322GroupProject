@@ -1,7 +1,8 @@
 import React from "react";
-import { Helmet }  from "react-helmet";
+
 import stylecss from "./styles.module.css";
 import loginstyle from "./login.module.css";
+import { Outlet } from "react-router-dom";
 
 
 
@@ -9,12 +10,12 @@ function CreateAccount() {
   return (
     <div>
     <head>
-      <Helmet>
+ 
         <meta charset ="UTF-8" />
         <meta name="viewport" content="width-device-width, initial-scale=1.0" />
         <title>Create Account</title>
         <link rel= "stylesheet" href= "styles.css" />
-      </Helmet>
+
     </head>
     <body>
       <header className={stylecss.header}>
@@ -22,13 +23,9 @@ function CreateAccount() {
       </header>
       <main class= {stylecss.contentcontainer}>
         <form id="create-account-form" class="form-container">
-          <div class ={loginstyle.formgroup}>
-            <label for="name">Full Name: </label>
-            <input type="text" id="name"name="name" placeholder="Enter Your full name" required />
-          </div>
 
           <div class={loginstyle.formgroup}>
-            <label for="email">Email:</label>
+            <label for="email">Email or Username:</label>
             <input type="email" id="email"name="email" placeholder="Enter Your Email" required />
           </div>
 
@@ -56,6 +53,7 @@ function CreateAccount() {
       </main>
       <script src="accountCreationCaptcha.js"></script>
     </body>
+    <Outlet/>
 
 
 

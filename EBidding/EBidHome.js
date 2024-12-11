@@ -1,5 +1,6 @@
 import React from "react";
 import homestyle from "./MoreStyles.module.css";
+import { Link, Outlet } from "react-router-dom";
 
 
 
@@ -15,15 +16,18 @@ return(
     </head>
     <body className={homestyle.body}>
         <header className={homestyle.header}>
-        <div class={homestyle.profilepic}>BIDBLOCK</div>
+        <div class={homestyle.profilepic}>
+            <p className={homestyle.pp}>BiddingBlock</p>
+        </div>
         <div class={homestyle.searchbar}>
             <input type="text" placeholder="Search" />
             <button>🔍</button>
         </div>
         <nav class={homestyle.nav}>
-            <button>Dashboard</button>
+            <button><Link to="/EBidLogin">Log In</Link></button>
+            <button><Link to="/ViewWishlist">View Wishlist</Link></button>
             <button>Messages</button>
-            <button>Account</button>
+            <button><Link to="ViewAccount">View Account</Link></button>
         </nav>
         </header>
   
@@ -32,19 +36,30 @@ return(
         <ul className={homestyle.ul}>
             <li class={homestyle.li}>Recently Viewed</li>
             <li>Bid/Offer</li>
-            <li>Wishlist</li>
-            <li>Selling</li>
-            <li>Purchases</li>
-            <li>Saved Sellers</li>
+
+            <li><Link to="/Purchases">Purchases</Link></li>
+            <li><Link to="/SavedSellers">Saved Sellers</Link></li>
         </ul>
         </aside>
+        <main className={homestyle.mainPosition}>
+            <main className={homestyle.item}>item1</main>
+            <main className={homestyle.item}>item2</main>
+            <main className={homestyle.item}>item3</main>
+            <main className={homestyle.item}>item4</main>
+            <main className={homestyle.item}>item5</main>
+            <main className={homestyle.item}>item6</main>
+            <main className={homestyle.item}>item7</main>
+ 
+
+
+
+
+        </main>
     
-        <section class={homestyle.wishlist}>
-            <h2 className={homestyle.h2}>Items on the BiddingBlock</h2>
-      
-        </section>
+
         </main>
     </body>
+    <Outlet/>
 </div>
 
 );
